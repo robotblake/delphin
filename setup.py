@@ -7,10 +7,8 @@ setup(
     license='MIT',
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
-    install_requires=['botocore', 'sqlparse'],
+    install_requires=['botocore>=1.5.52', 'sqlparse'],
     packages=find_packages(),
-    package_data={'botocore': ['data/*/*.json']},
-    include_package_data=True,
     entry_points={
         'console_scripts': [
             'delphin=delphin.cli:main',
